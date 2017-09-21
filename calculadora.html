@@ -33,16 +33,16 @@
     <div class="row">
         <div class="col s6"><br><br>
             <div class="input-field col s12">
-            <input placeholder="Entre com o primeiro valor" id="valor1" type="number" class="validate">
+            <input placeholder="Entre com o primeiro valor" id="num1" type="number" class="validate">
             <label for="valor1">Valor 1</label>
 
             </div>
 
             <div class="input-field col s12">
-            <input placeholder="Entre com o segundo valor" id="valor2" type="number" class="validate">
+            <input placeholder="Entre com o segundo valor" id="num2" type="number" class="validate">
             <label for="valor1">Valor 2</label>
       <div class="input-field s12">
-        <select>
+        <select id="operacao">
           <option value="" disabled selected>Selecione a operação</option>
           <option value="1">Adição</option>
           <option value="2">Subtração</option>
@@ -60,13 +60,13 @@
 
       <div class="row">
         <div class="input-field col s12">
-          <input disabled value="VALOR" id="disabled" type="text" class="validate">
+        <input type="text" name="valorfinal" id="result">
           <label for="disabled"></label>
         </div>
 </div>
     </div>
     <br><br><br><br>
-      <a class="waves-effect waves-light btn">Calcular</a>
+      <a onclick="calcular()" class="waves-effect waves-light btn">Calcular</a>
 	</div>
 
   </div>
@@ -100,6 +100,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/calculadora.js"></script>
 
   </body>
 </html>
